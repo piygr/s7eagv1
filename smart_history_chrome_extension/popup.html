@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=360, initial-scale=1">
+
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        padding: 12px;
+        width: 360px;
+        min-height: 100px;
+        max-height: 500px;
+        overflow-y: auto;
+        background: #f6f8fa;
+        color: #333;
+      }
+
+      #query {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+        margin-bottom: 12px;
+      }
+
+      #query:focus {
+        border-color: #007aff;
+        box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+      }
+
+      .card {
+        background: white;
+        border: 1px solid #e1e4e8;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        transition: box-shadow 0.2s;
+      }
+
+      .card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      .card a {
+        font-weight: 600;
+        font-size: 14px;
+        color: #0366d6;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        word-break: break-all;
+      }
+
+      .card p {
+        font-size: 13px;
+        margin: 6px 0;
+        color: #444;
+      }
+
+      .card .meta {
+        font-size: 12px;
+        color: #888;
+        margin-top: 4px;
+      }
+
+      #results {
+        max-height: 400px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="query" placeholder="Search your indexed history..." />
+    <div id="spinner"></div>
+    <div id="results"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
