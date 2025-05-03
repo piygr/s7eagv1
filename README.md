@@ -1,4 +1,4 @@
-# 🔍 Smart History – AI-Powered Chrome History Search
+# 🔍 Smart History – AI-Powered Chrome History Search (S7EAGv1 | S26ERAv3)
 
 Smart History is a local-first Chrome extension that lets you **search your web browsing history by content**, not just URLs or titles. It captures the **actual text** of visited pages (excluding private ones), generates semantic embeddings using AI, and allows you to search and highlight results directly on the original page — all while running privately on your own machine. [Plugin Demo](https://youtu.be/zYwhe-P0C48)
 
